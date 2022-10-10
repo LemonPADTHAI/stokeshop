@@ -1,12 +1,20 @@
 local Server =  syn.request({
-    Url = "http://127.0.0.1/Whitelist/Server.php?Key=".. _G.Key,
+    Url = "http://127.0.0.1/Whitelist/Server.php?Key=".. _G.Key .."&HWID="..HWID,
     Method = "GET"
 }).Body
  
 if Server == "WHITELIST !" then
     print("SCRIPT")
+elseif Server == "Invaid HWID !" then
+    game.Players.LocalPlayer:kick("Invaid HWID")
 elseif Server == "Invaid Key" then
     game.Players.LocalPlayer:kick("Invaid Key")
+else
+    game.Players.LocalPlayer:kick("Invaid Key")
+end
+if not game:IsLoaded() then 
+    repeat game.Loaded:Wait()
+    until game:IsLoaded() 
 end
 repeat wait(1)
     pcall(function()
@@ -147,7 +155,7 @@ end
 
 function Text(value)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Switch Notification", 
+        Title = "Stoke Notification", 
         Text = tostring(value),
         Icon = "http://www.roblox.com/asset/?id=9606070311",
         Duration = 10
@@ -10585,7 +10593,7 @@ function HopServer()
     if not _G.TP_Ser then
 		_G.TP_Ser = true
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "Hop Low Server ", 
+			Title = "Hop Server ", 
 			Text = "กำลังหาเซิฟ",
 			Icon = "http://www.roblox.com/asset/?id=9606070311",
 			Duration = 25
@@ -10666,7 +10674,7 @@ function HopLowServer()
 	if not _G.TP_Ser then
 		_G.TP_Ser = true
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "Hop Server S", 
+			Title = "Hop low Server", 
 			Text = "กำลังหาเซิฟ",
 			Icon = "http://www.roblox.com/asset/?id=9606070311",
 			Duration = 25
