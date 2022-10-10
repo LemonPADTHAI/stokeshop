@@ -1,8 +1,3 @@
-_G.Key = "KEY-A"
- 
- 
-HWID = "HELLO1"
- 
 local Server =  syn.request({
     Url = "http://127.0.0.1/Whitelist/Server.php?Key=".. _G.Key .."&HWID="..HWID,
     Method = "GET"
