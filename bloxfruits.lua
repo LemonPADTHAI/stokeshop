@@ -1,5 +1,5 @@
 local Server =  syn.request({
-    Url = "http://127.0.0.1/Whitelist/Server.php?Key=".. _G.Key .."&_G.HWID=".._G.HWID,
+    Url = "http://127.0.0.1/Whitelist/Server.php?Key=".. _G.Key .."&HWID="..HWID,
     Method = "GET"
 }).Body
  
