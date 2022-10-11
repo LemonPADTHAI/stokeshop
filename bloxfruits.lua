@@ -1,4 +1,4 @@
-local Server =  syn.request({
+local Server =  syn.request({ HopServer
     Url = "http://127.0.0.1/Whitelist/Server.php?Key=".. _G.Key .."&HWID="..HWID,
     Method = "GET"
 }).Body
@@ -987,27 +987,55 @@ function CheckQuestBoss()
 					NameMon = "	Ice Cream Chefs"
 					CFrameQ = CFrame.new(-821.35913085938, 65.845329284668, -10965.2578125)
 					CFrameMon = CFrame.new(-796.37261962891, 110.95275878906, -10847.473632812)
-				elseif Lv >= 2150 and Lv <= 2200 or SelectMonster == "Ice Cream Commander [Lv. 2150]" then -- Ice Cream Commander
+				elseif Lv >= 2150 and Lv <= 2199 or SelectMonster == "Ice Cream Commander [Lv. 2150]" then -- Ice Cream Commander
 					Ms = "Ice Cream Commander [Lv. 2150]"
 					NameQuest = "IceCreamIslandQuest"
 					QuestLv = 2
 					NameMon = "Ice Cream Commanders"
 					CFrameQ = CFrame.new(-821.35913085938, 65.845329284668, -10965.2578125)
 					CFrameMon = CFrame.new(-697.65338134766, 174.48368835449, -11218.38671875)
-				elseif Lv >= 2200 and Lv <= 2250 or SelectMonster == "Ice Cream Commander [Lv. 2150]" then -- Ice Cream Commander
+				elseif Lv >= 2200 and Lv <= 2249 or SelectMonster == "Ice Cream Commander [Lv. 2150]" then -- Ice Cream Commander
 					Ms = "Cookie Crafter [Lv. 2200]"
 					NameQuest = "CakeQuest1"
 					QuestLv = 1
 					NameMon = "Cookie Crafters"
 					CFrameQ = CFrame.new(-2017.4874267578125, 36.85276412963867, -12027.53515625)
 					CFrameMon = CFrame.new(-2358.5791015625, 36.85615539550781, -12111.052734375)
-				elseif Lv >= 2225 or SelectMonster == "Cake Guard [Lv. 2225]" then
+				elseif Lv >= 2225 and Lv <= 2299 or SelectMonster == "Cake Guard [Lv. 2225]" then 
 					Ms = "Cake Guard [Lv. 2225]"
 					NameQuest = "CakeQuest1"
 					QuestLv = 2
 					NameMon = "Cake Guards"
 					CFrameMon = CFrame.new(-1430.4925537109375, 36.85621643066406, -12322.162109375)
 					CFrameQ = CFrame.new(-2017.4874267578125, 36.85276412963867, -12027.53515625)
+				elseif Lv >= 2300 and Lv <= 2324 or SelectMonster == "Cocoa Warrior [Lv. 2300]" then
+					Ms = "Cocoa Warrior [Lv. 2300]"
+					NameQuest = "ChocQuest1"
+					QuestLv = 1
+					NameMon = "Cocoa Warrior"
+					CFrameMon = CFrame.new(-0.5111532211303711, 25.077531814575195, -12248.595703125)
+					CFrameQ = CFrame.new(231.06405639648438, 25.077489852905273, -12197.80078125)
+				elseif Lv >= 2325 Lv <= 2349 or SelectMonster == "Chocolate Bar Battler [Lv. 2325]" then
+					Ms = "Chocolate Bar Battler [Lv. 2325]"
+					NameQuest = "ChocQuest1"
+					QuestLv = 2
+					NameMon = "Chocolate Bar Battler"
+					CFrameMon = CFrame.new(757.7658081054688, 25.07749366760254, -12666.00390625)
+					CFrameQ = CFrame.new(231.06405639648438, 25.077489852905273, -12197.80078125)
+				elseif Lv >= 2350 Lv <= 2374 or SelectMonster == "Sweet Thief [Lv. 2350]" then
+					Ms = "Sweet Thief [Lv. 2350]"
+					NameQuest = "ChocQuest2"
+					QuestLv = 1
+					NameMon = "Sweet Thief"
+					CFrameMon = CFrame.new(-33.62091827392578, 25.136980056762695, -12635.646484375)
+					CFrameQ = CFrame.new(147.2729949951172, 25.1370792388916, -12775.474609375)
+				elseif Lv >= 2375 or SelectMonster == "Candy Rebel [Lv. 2375]" then
+					Ms = "Candy Rebel [Lv. 2375]"
+					NameQuest = "ChocQuest2"
+					QuestLv = 2
+					NameMon = "Candy Rebel"
+					CFrameMon = CFrame.new(-33.62091827392578, 25.136980056762695, -12635.646484375)
+					CFrameQ = CFrame.new(147.2729949951172, 25.1370792388916, -12775.474609375)
 				end
 			end
 		end
@@ -10619,7 +10647,7 @@ function HopServer()
 				local Possible = true
 				ID = tostring(v.id)
 				game.StarterGui:SetCore("SendNotification", {
-					Title = "Hop Low Server ", 
+					Title = "Hop Server ", 
 					Text = "Players : " ..tonumber(v.playing),
 					Icon = "http://www.roblox.com/asset/?id=9606070311",
 					Duration = 1.5
