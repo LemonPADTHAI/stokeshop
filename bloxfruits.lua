@@ -1787,6 +1787,34 @@ function CheckQuestBoss()
 					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
 					CFrameMon = CFrame.new(-1818.347900390625, 93.41275787353516, -12887.66015625)
 					TelePBoss(CFrameQ)
+                elseif Lv >= 2300 and Lv <= 2324 or SelectMonster == "Cocoa Warrior [Lv. 2300]" then
+					Ms = "Cocoa Warrior [Lv. 2300]"
+					NameQuest = "ChocQuest1"
+					QuestLv = 1
+					NameMon = "Cocoa Warrior"
+					CFrameMon = CFrame.new(-0.5111532211303711, 25.077531814575195, -12248.595703125)
+					CFrameQ = CFrame.new(231.06405639648438, 25.077489852905273, -12197.80078125)
+				elseif Lv >= 2325 Lv <= 2349 or SelectMonster == "Chocolate Bar Battler [Lv. 2325]" then
+					Ms = "Chocolate Bar Battler [Lv. 2325]"
+					NameQuest = "ChocQuest1"
+					QuestLv = 2
+					NameMon = "Chocolate Bar Battler"
+					CFrameMon = CFrame.new(757.7658081054688, 25.07749366760254, -12666.00390625)
+					CFrameQ = CFrame.new(231.06405639648438, 25.077489852905273, -12197.80078125)
+				elseif Lv >= 2350 Lv <= 2374 or SelectMonster == "Sweet Thief [Lv. 2350]" then
+					Ms = "Sweet Thief [Lv. 2350]"
+					NameQuest = "ChocQuest2"
+					QuestLv = 1
+					NameMon = "Sweet Thief"
+					CFrameMon = CFrame.new(-33.62091827392578, 25.136980056762695, -12635.646484375)
+					CFrameQ = CFrame.new(147.2729949951172, 25.1370792388916, -12775.474609375)
+				elseif Lv >= 2375 or SelectMonster == "Candy Rebel [Lv. 2375]" then
+					Ms = "Candy Rebel [Lv. 2375]"
+					NameQuest = "ChocQuest2"
+					QuestLv = 2
+					NameMon = "Candy Rebel"
+					CFrameMon = CFrame.new(-33.62091827392578, 25.136980056762695, -12635.646484375)
+					CFrameQ = CFrame.new(147.2729949951172, 25.1370792388916, -12775.474609375)
 				end
 			end
 		end
